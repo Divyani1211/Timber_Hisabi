@@ -1,0 +1,19 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up - Timber Hisabi</title>
+</head>
+<body>
+    <h2>Sign Up</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="username" placeholder="Company name" required><br>
+        <input type="password" name="password1" placeholder="Password" required><br>
+        <input type="password" name="password2" placeholder="Confirm Password" required><br>
+        <button type="submit">Create Account</button>
+    </form>
+    <a href="{% url 'login' %}">Already have an account? Login</a>
+</body>
+</html>

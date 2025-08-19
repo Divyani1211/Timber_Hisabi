@@ -1,0 +1,52 @@
+{% load static %}   <!-- always load static at top -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Timber Hisabi - Home</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+      text-align: center;
+      width: 350px;
+    }
+    .logo img {
+      width: 200
+      px;   /* adjust size */
+      height: auto;
+      margin-bottom: 20px;
+    }
+    h1 {
+      margin: 10px 0;
+      font-size: 24px;
+      color: #333;
+    }
+    p {
+      color: #666;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="{% static 'home/logo.png.jpeg' %}" alt="Timber Hisabi Logo">
+    </div>
+    <h1>Welcome to Timber Hisabi</h1>
+    
+  </div>
+</body>
+</html>
